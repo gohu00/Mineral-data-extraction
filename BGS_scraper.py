@@ -1,3 +1,5 @@
+import urllib
+
 def BGS_scraper (datee, datea, commodity) :
   url = f"https://www2.bgs.ac.uk/mineralsuk/statistics/wms.cfc?method=listResults&dataType=Production&dateFrom={datea}&dateTo={datee}&commodity={commodity}&country=&agreeToTsAndCs=agreed&exportToSpreadsheet=Yes"
   urllib.request.urlretrieve(url, "test.xlsx")
